@@ -1,5 +1,5 @@
 /*
-    Given an array A. Construct prefix sum of the array in the given array itself.
+    Given an array arr. Construct prefix sum of the array in the given array itself.
 */
 
 use std::io;
