@@ -7,7 +7,7 @@ use std::io;
 struct DSA;
 
 impl DSA {
-    pub fn subarray_sum(arr: Vec<i64>) -> (usize, usize, i64) {
+    pub fn maximum_sum_subarray(arr: Vec<i64>) -> (usize, usize, i64) {
         let mut x: usize = 0;
         let mut y: usize = 0;
         let mut maximum = i64::MIN;
@@ -43,7 +43,7 @@ fn main() {
         .map(|x| x.parse().expect("Not an integer"))
         .collect();
 
-    let (l, r, maximum) = DSA::subarray_sum(arr.clone());
+    let (l, r, maximum) = DSA::maximum_sum_subarray(arr.clone());
     println!(
         "Sub-array {:?} with maximum sum of {} for array, {:?}.",
         &arr[l..r + 1],

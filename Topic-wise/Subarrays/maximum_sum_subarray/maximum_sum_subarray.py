@@ -3,7 +3,7 @@
 """
 
 class DSA:
-    def subarray_sum(self, arr):
+    def maximum_sum_subarray(self, arr):
         x = y = 0
         maximum, n = arr[0], len(arr)
         for i in range(n):
@@ -21,5 +21,5 @@ class DSA:
 
 dsa = DSA()
 arr = list(map(int, input().split()))
-l, r, maximum = dsa.subarray_sum(arr)
+l, r, maximum = dsa.maximum_sum_subarray(arr)
 print(f"Sub-array {arr[l: r + 1]} with maximum sum of {maximum} for array, {arr}.")
